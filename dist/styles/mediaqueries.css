@@ -1,0 +1,29 @@
+@media screen and (max-width: 600px) {
+    .main-icon {
+      width: 350px;
+    }
+    .main-icon img{
+      width: 100%;
+      margin: 0 auto;
+    }
+    nav ul a {
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 1rem;
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: 1px;
+      line-height: 10vh;
+    }
+  }
+  
+  
+  @media screen and (max-width: 400px) {
+    .main-icon {
+      width: 250px;
+    }
+    .main-icon img{
+      width: 100%;
+      margin: 0 auto;
+    }
+  }

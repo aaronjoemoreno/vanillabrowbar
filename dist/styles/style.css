@@ -1,0 +1,273 @@
+:root {
+  --main-color: #ffcccc;
+  --dark-color: #404040;
+  --main-letter-spacing: 20px;
+  --menu-letter-spacing: 5px;
+  --main-font: 'Source Sans Pro', sans-serif;
+
+}
+body,
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-one);
+}
+.main-container {
+  padding: 0;
+  margin: 0;
+  z-index: -99;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.main-container h2{
+  position: inherit;
+}
+/*************
+Navigation
+*************/
+nav {
+  top: 0;
+  width: 100%;
+  transition: all 0.5s;
+  background: var(--main-color);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.main-nav ul{
+  margin: 0 auto;
+}
+nav ul a {
+  font-size: 1.2rem;
+  color: var(--dark-color);
+  text-decoration: none;
+  letter-spacing: 1.3px;
+  line-height: 10vh;
+  font-family: var(--main-font);
+}
+.main-nav p{
+  display: inline-block;
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+nav ul a:hover {
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+}
+
+/*************************
+Nav Added Class for Sticky
+*************************/
+body.fixed-nav nav {
+  position: fixed;
+}
+/*************
+Header
+*************/
+.main-top {
+  height: 60vh;
+  width: 100%;
+  text-align: center;
+  padding-top: 30vh;
+}
+.social-icons {
+  float: left;
+  width: 30px;
+  height: 240px;
+}
+.social-icons img {
+  width: 100%;
+  padding: 10px;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+.main-title {
+  display: inline-block;
+  margin: 0 auto;
+  margin-right: 30px;
+}
+.main-title h1 {
+  font-size: 2.5em;
+  font-family: var(--main-font);
+  letter-spacing: var(--main-letter-spacing);
+}
+.main-title h3 {
+  line-height: 0px;
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-family: var(--main-font);
+  color: var(--tile-color);
+}
+.main-title h3 span {
+  color: tomato;
+}
+.main-icon {
+  width: 400px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 4vh;
+  left: 0;
+  right: 0;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+}
+.main-icon img {
+  width: 100%;
+}
+.main-icon-clickable{
+  z-index: 999;
+}
+
+.text-box-icon{
+  color: #fff;
+  text-decoration: underline;
+  font-size: 1.2em;
+}
+.morning{
+  background: var(--hipster);
+}
+.afternoon{
+  background: var(--afternoon);
+}
+.night{
+  background: #404040;
+}
+/*************
+About
+*************/
+.about {
+  height: 70vh;
+  width: 100%;
+  background: var(--about-section);
+  text-align: center;
+  padding-top: 20vh;
+  float: none;
+}
+.hello{
+  font-family: var(--main-font);
+  letter-spacing: var(--main-letter-spacing);
+}
+.about section{
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.about p {
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  width: 70%;
+  color: var(--tile-color);
+  max-width: 500px;
+  margin: 0 auto;
+}
+.team-members{
+  border-top: 1px solid var(--dark-color);
+  padding-top: 30px;
+}
+/*************
+Menu
+*************/
+.menu{
+  height: 40vh;
+  border-top: 1px solid black;
+  text-align: center;
+}
+.menu-left{
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  vertical-align: top;
+}
+.menu-right{
+  display: inline-block;
+  width: 40%;
+  height: auto;
+  vertical-align: top;
+}
+.menu-right, .menu-left{
+  margin-top: 40px;
+}
+.menu h1{
+  text-align: center;
+}
+.menu-item{
+  float: left;
+  font-family: var(--main-font);
+  letter-spacing: var(--menu-letter-spacing);
+}
+.cost{
+  font-family: var(--main-font);
+  float: right;
+  text-align: right;
+  width: 200px;
+}
+.service-details{
+  margin-top: 40px;
+  text-align: left;
+}
+
+/*************
+Contact
+*************/
+.contact{
+  width: 100%;
+  height: 70vh;
+  background: var(--afternoon);
+  text-align: center;
+  padding-top: 100px;
+}
+.contact h2{
+  font-family: var(--main-font);
+  letter-spacing: var(--main-letter-spacing);
+  height: 40px;
+  line-height: 38px;
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.form-container{
+  margin: 0 auto;
+  width: 80%;
+}
+
+.form-container input{
+  margin-top: 20px;
+  width: 70%;
+  height: 40px;
+  border: .5px solid #404040;
+}
+#textarea{
+  width: 70%;
+  margin-top: 20px;
+  border: .5px solid #404040;
+}
+.submit{
+  border: none;
+  background: #404040;
+  color: #fff;
+}
+.submit:hover{
+  background:#fff;
+  color: #404040;
+  cursor: pointer;
+}
+
+/*****************
+FOOTER
+*****************/
+.main-footer{
+  background: #404040;
+  width: 100%;
+  min-height: 50px;
+  display:flex;
+}
