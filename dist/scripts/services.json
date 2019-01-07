@@ -1,0 +1,77 @@
+{
+	"menu": [{
+
+			"name": "brow shaping",
+			"details": " ",
+			"price": 25,
+			"featured": false
+		},
+		{
+			"name": "brow + lip",
+			"details": " ",
+			"price": 30,
+			"featured": false
+		},
+		{
+			"name": "ace (brow, lip, cheek, chin)",
+			"details": " ",
+			"price": 40,
+			"featured": false
+		},
+		{
+			"name": "brow shaping",
+			"details": " ",
+			"price": 25,
+			"featured": false
+		},
+		{
+			"name": "half leg",
+			"details": " ",
+			"price": 40,
+			"featured": false
+		},
+		{
+			"name": "full leg",
+			"details": " ",
+			"price": 60,
+			"featured": false
+		},
+		{
+			"name": "bikini",
+			"details": " ",
+			"price": 35,
+			"featured": false
+		},
+		{
+			"name": "brazilian",
+			"details": " ",
+			"price": 50,
+			"featured": false
+		},
+		{
+			"name": "underarm",
+			"details": " ",
+			"price": 20,
+			"featured": false
+		},
+		{
+			"name": "arm",
+			"details": " ",
+			"price": 40,
+			"featured": false
+		},
+		{
+			"name": "back",
+			"details": " ",
+			"price": 50,
+			"featured": false
+		},
+		{
+			"name": "chest",
+			"details": " ",
+			"price": 50,
+			"featured": false
+
+		}
+	]
+}

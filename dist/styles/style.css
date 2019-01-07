@@ -181,12 +181,16 @@ Menu
   height: 40vh;
   border-top: 1px solid black;
   text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  
 }
 .menu-left{
   display: inline-block;
   width: 40%;
   height: auto;
   vertical-align: top;
+  text-align: left;
 }
 .menu-right{
   display: inline-block;
@@ -214,6 +218,15 @@ Menu
 .service-details{
   margin-top: 40px;
   text-align: left;
+}
+/**************
+MENU - EXPANDED
+***************/
+.expand-button{
+  margin: 0 auto;
+  font-family: var(--main-font);
+  font-weight: 100;
+  font-size: 3em;
 }
 
 /*************
