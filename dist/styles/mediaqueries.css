@@ -26,6 +26,25 @@
       margin-bottom: 10px;
     }
 
+    .expanded-menu-info{
+      width: 90%;
+      margin: 0 auto;
+      display: block;
+      padding-top: 12px;
+    }
+    .menu-title-expand{
+      display: inline-block;
+      float: left;
+      font-size: .8em;
+      font-family: var(--main-font);
+      letter-spacing: var(--menu-letter-spacing);
+    }
+    .price-title-expand{
+      text-align: right;
+      font-size: .8em;
+      font-family: var(--main-font);
+    }
+
   }
   
   

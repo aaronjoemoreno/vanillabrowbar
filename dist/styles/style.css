@@ -178,6 +178,7 @@ About
 Menu
 *************/
 .menu{
+  display: block;
   height: 40vh;
   border-top: 1px solid black;
   text-align: center;
@@ -219,21 +220,75 @@ Menu
   margin-top: 40px;
   text-align: left;
 }
+/*after expand button container*/
+.expanded-menu{
+  display: block;
+  width: 100%;
+}
 /**************
 MENU - EXPANDED
 ***************/
 .expand-button{
   margin: 0 auto;
+  width: auto;
+  max-width: 50px;
   font-family: var(--main-font);
   font-weight: 100;
   font-size: 3em;
+
+  -webkit-transition: transform .5s;
+  transition: transform .5s;
+}
+.expand-button:hover{
+  cursor: pointer;
+}
+/*TRANSITION*/
+.open{
+  transform: rotate(225deg);
+  -webkit-transform-origin: 50% 50% ;
+  -moz-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 }
 
+.menu-item li{
+  list-style: none;
+  margin-bottom: 10px;
+}
+.cost li{
+  margin-bottom: 20px;
+  list-style: none;
+}
+.expanded-menu-info{
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: .5px solid #404040;
+}
+.expanded-menu-info:nth-child(odd){
+/* background: rgb(250, 250, 250);*/
+}
+.menu-title-expand{
+  display: inline-block;
+  float: left;
+  font-size: 1.2em;
+  font-family: var(--main-font);
+  letter-spacing: var(--menu-letter-spacing);
+  line-height: 20px;
+}
+.price-title-expand{
+  text-align: right;
+  font-size: 1.2em;
+  font-family: var(--main-font);
+}
 /*************
 Contact
 *************/
 .contact{
-  width: 100%;
+  display: block;
+  width: 100%; 
   height: 70vh;
   background: var(--afternoon);
   text-align: center;
@@ -274,7 +329,6 @@ Contact
   color: #404040;
   cursor: pointer;
 }
-
 /*****************
 FOOTER
 *****************/
@@ -283,4 +337,13 @@ FOOTER
   width: 100%;
   min-height: 50px;
   display:flex;
+}
+/**************
+ADDED CLASSES
+**************/
+.tester{
+  border: 1px solid red; 
+}
+.expanded-menu-contact{
+  margin-top: 2000px;
 }
