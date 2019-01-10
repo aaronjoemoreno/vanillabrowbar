@@ -303,7 +303,7 @@ Contact
   text-align: center;
   padding-top: 100px;
 }
-.contact h2{
+.contact h1{
   font-family: var(--main-font);
   letter-spacing: var(--main-letter-spacing);
   height: 40px;
@@ -322,11 +322,15 @@ Contact
   width: 70%;
   height: 40px;
   border: .5px solid #404040;
+  font-family: var(--main-font);
+  text-align: center;
 }
 #textarea{
   width: 70%;
   margin-top: 20px;
   border: .5px solid #404040;
+  text-align: center;
+  font-family: var(--main-font);
 }
 .submit{
   border: none;
