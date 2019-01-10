@@ -1,4 +1,18 @@
+:root {
+  --main-color: #ffcccc;
+  --dark-color: #404040;
+  --main-letter-spacing: 20px;
+  --menu-letter-spacing: 5px;
+  --main-font: 'Source Sans Pro', sans-serif;
+
+}
+
+
 @media screen and (max-width: 600px) {
+    .main-title{
+      width: 100%;
+      text-align: center;
+    }
     .main-icon {
       width: 350px;
     }
@@ -44,6 +58,22 @@
       font-size: .8em;
       font-family: var(--main-font);
     }
+    /*social media icons*/
+    .social-icons{
+      display: block;
+      width: 80%;
+      float: none;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+    .social-icons a img{
+      max-width: 30px;
+    
+    }
+    .main-nav ul a{
+      color: var(--dark-color);
+    }
+
 
   }
   
@@ -57,7 +87,6 @@
       margin: 0 auto;
     }
   }
-
 
   .service-details{
 
