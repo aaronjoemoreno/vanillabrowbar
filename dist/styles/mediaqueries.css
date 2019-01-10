@@ -31,12 +31,10 @@
     }
 /*left side of Menu Portion*/
     .menu-left{
-      border: 1px solid red;
     }
     
   /*Name of Service*/
     .menu-item{
-      border: 1px solid green;
       margin-bottom: 10px;
     }
 

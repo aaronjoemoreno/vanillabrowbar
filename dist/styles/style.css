@@ -26,6 +26,15 @@ body,
 .main-container h2{
   position: inherit;
 }
+.main-logo{
+  float: left;
+  width: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.main-logo img{
+  width: 100%;
+}
 /*************
 Navigation
 *************/
@@ -346,4 +355,7 @@ ADDED CLASSES
 }
 .expanded-menu-contact{
   margin-top: 2000px;
+}
+.hidden{
+  display: none;
 }

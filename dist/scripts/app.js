@@ -9,6 +9,7 @@ let serviceDetails = document.querySelector(".expanded-menu .service-details");
 let cost = document.querySelector(".expanded-menu .cost");
 const contactForm = document.querySelector(".contact");
 const expandedMenu = document.querySelector(".expanded-menu");
+const expandButton = document.querySelector(".expand-button");
 const services = [
   {
     name: "brow shaping",
@@ -155,18 +156,46 @@ const services = [
 //const keys = Object.entries(services);
 
 function menuData() {
-  contactForm.classList.add("expanded-menu-contact");
-  this.classList.add('open');
-
-  services.forEach(function(service) {
-    const name = `<div class="expanded-menu-info">
+  if (this.classList.contains("open")) {
+    closeMenu();
+  } else {
+    contactForm.classList.add("expanded-menu-contact");
+    this.classList.add("open");
+    expandedMenu.classList.remove("hidden");
+    services.forEach(function(service) {
+      const name = `<div class="expanded-menu-info">
 	<div class="menu-title-expand">${service.name}</div>
 	<div class="price-title-expand">${service.price}</div>
 	</div>`;
 
-    //CONSIDER USING FILTER
-    expandedMenu.innerHTML += name;
-  });
+      //CONSIDER USING FILTER
+      expandedMenu.innerHTML += name;
+    });
+  }
+}
+
+//Featured Menu Options
+
+//check if featured is true...
+
+//Store name in array
+
+//store description in array
+
+//store price in array
+
+//Display items
+/*
+Main Item - .menu-left.menu-item 
+Details - .service-details
+Cost - .menu-right.cost
+
+*/
+
+function closeMenu() {
+  expandButton.classList.remove("open");
+  contactForm.classList.remove("expanded-menu-contact");
+  expandedMenu.classList.add("hidden");
 }
 
 function fixNav() {
@@ -200,4 +229,4 @@ function formSubmit(e) {
 window.addEventListener("scroll", fixNav);
 document.querySelector(".submit").addEventListener("click", formSubmit);
 // window.addEventListener("load", menuData);
-document.querySelector(".expand-button").addEventListener("click", menuData);
+expandButton.addEventListener("click", menuData);
