@@ -114,9 +114,6 @@ Header
   font-family: var(--main-font);
   color: var(--tile-color);
 }
-.main-title h3 span {
-  color: tomato;
-}
 .main-icon {
   width: 400px;
   margin: 0 auto;
@@ -299,7 +296,6 @@ Contact
   display: block;
   width: 100%; 
   height: 70vh;
-  background: var(--afternoon);
   text-align: center;
   padding-top: 100px;
 }
