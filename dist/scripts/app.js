@@ -237,7 +237,7 @@ let isInViewport = function(elem) {
 
 //Contact Form Will Come Soon
 function formSubmit(e) {
-  e.preventDefault();
+  
 }
 
 window.addEventListener("scroll", fixNav);
