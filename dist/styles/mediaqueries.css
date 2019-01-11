@@ -74,8 +74,12 @@
     .main-nav ul a{
       color: var(--dark-color);
     }
-
-
+    .contact{
+      margin-top: 1500px;
+    }
+    .expanded-menu-contact{
+      margin-top: 2300px;
+    }
   }
   
   
