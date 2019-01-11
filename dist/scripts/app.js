@@ -10,6 +10,7 @@ let cost = document.querySelector(".expanded-menu .cost");
 const contactForm = document.querySelector(".contact");
 const expandedMenu = document.querySelector(".expanded-menu");
 const expandButton = document.querySelector(".expand-button");
+const featuredMenu = document.querySelector('.menu .hello');
 const services = [
   {
     name: "brow shaping",
@@ -89,67 +90,67 @@ const services = [
     name: "lash tint",
     details: "boost color, semi-permanent, immediate results",
     price: 20,
-    featured: false
+    featured: true
   },
   {
     name: "brow tint",
     details: "boost thickness and color, immediate results",
     price: 20,
-    featured: false
+    featured: true
   },
   {
     name: "brow tint add-on",
     details: "add to brow shape to enhance thickness",
     price: 10,
-    featured: false
+    featured: true
   },
   /*Treatments */
   {
     name: "mini facial",
     details: "cleanse, exfoliate, nourish, relax, customizable",
     price: 60,
-    featured: false
+    featured: true
   },
   {
     name: "microdermabrasion",
     details: "renew skin tone + texture, brighten, treat",
     price: 90,
-    featured: false
+    featured: true
   },
   {
     name: "progressive peel",
     details:
       "refining, removes outer layers of skin, skin may have mild sloughing, treatment can be repeated three to four weeks apart",
     price: 65,
-    featured: false
+    featured: true
   },
   {
     name: "mid depth peel",
     details:
       "rejuvenating, targets deeper layers of the skin, treatment can be repeated monthly",
     price: 85,
-    featured: false
+    featured: true
   },
   {
     name: "deep peel",
     details:
       "restoring, reaches deepest epidermal layers of the skin, peels in large segments occurring three to four days after treatment, recovery lasts seven to ten days, can be repeated four times per year",
     price: 100,
-    featured: false
+    featured: true
   },
   {
     name: "micro peel",
     details:
       "combo of microdermabrasion and peel, customizable, downtime depending on peel used",
     price: 125,
-    featured: false
+    featured: true
   },
   {
     name: "dermaplaning",
     details:
       "light exfoliation, removal of peach fuzz, results are immediate, no downtime",
     price: 50,
-    featured: false
+    featured: true
   }
 ];
 
@@ -157,7 +158,7 @@ const services = [
 
 function menuData() {
   if (this.classList.contains("open")) {
-    closeMenu();
+    closeMenu(name);
   } else {
     contactForm.classList.add("expanded-menu-contact");
     this.classList.add("open");
@@ -174,28 +175,42 @@ function menuData() {
   }
 }
 
-//Featured Menu Options
+const serviceNames = services.filter((service) =>{
+  return service.featured;
+});
+const featuredServices = serviceNames.map((serviceName) =>{
+  return serviceName;
+});
 
-//check if featured is true...
 
-//Store name in array
+/*Loads Data on Page Load*/
+function featuredMenuData(){
+  
+  featuredServices.forEach((featuredService)=>{
+    let featuredItem = document.createElement("div");
+    featuredItem.classList.add('added-div');
+    featuredMenu.appendChild(featuredItem);
+    featuredItem.innerHTML = `
+    <div class="menu-left">
+            <h2 class="menu-item">${featuredService.name}</h2>
+            <div class="service-details">
+              ${featuredService.details}
+            </div>
+      </div>
+  
+          <div class="menu-right"><h3 class="cost">${featuredService.price}</h3></div>
+          <br />
+    `
+  })
 
-//store description in array
+}
 
-//store price in array
-
-//Display items
-/*
-Main Item - .menu-left.menu-item 
-Details - .service-details
-Cost - .menu-right.cost
-
-*/
-
-function closeMenu() {
+function closeMenu(name) {
   expandButton.classList.remove("open");
   contactForm.classList.remove("expanded-menu-contact");
   expandedMenu.classList.add("hidden");
+
+  expandedMenu.innerHTML += name;
 }
 
 function fixNav() {
@@ -223,10 +238,9 @@ let isInViewport = function(elem) {
 //Contact Form Will Come Soon
 function formSubmit(e) {
   e.preventDefault();
-  console.log("this works");
 }
 
 window.addEventListener("scroll", fixNav);
 document.querySelector(".submit").addEventListener("click", formSubmit);
-// window.addEventListener("load", menuData);
+window.addEventListener("load", featuredMenuData);
 expandButton.addEventListener("click", menuData);

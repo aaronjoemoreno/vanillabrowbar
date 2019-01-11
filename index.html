@@ -81,14 +81,14 @@
       </div>
       <div class="menu" id="menu">
         <h1 class="hello">SERVICES</h1>
-        <div class="menu-left">
+        <!-- <div class="menu-left">
           <h2 class="menu-item">mini facial</h2>
           <div class="service-details">
             cleanse, exfoliate, nourish, relax, customizable
           </div>
         </div>
 
-        <div class="menu-right"><h3 class="cost">60</h3></div>
+        <div class="menu-right"><h3 class="cost">60</h3></div> -->
         <br />
         <div class="expand-button">+</div>
         <div class="expanded-menu">
@@ -104,15 +104,16 @@
       <div class="contact" id="contact">
         <h1>CONTACT</h1>
         <div class="form-container">
-          <form action="/submit.php" method="POST" class="main-form">
-            <input type="text" class="name" placeholder="name" /> <br />
-            <input type="email" class="email" placeholder="email" /> <br />
+          <form class="main-form" name="contact" method="POST" data-netlify="true">
+            <input type="text" class="name" placeholder="name" name="name"/> <br />
+            <input type="email" class="email" placeholder="email" name="email" /> <br />
             <input type="phone" class="phone" placeholder="phone" /> <br />
             <textarea
               name="textarea"
               id="textarea"
               class="class-area"
               placeholder="Enter Message"
+              name="message"
             ></textarea>
             <br />
             <input type="submit" class="submit" placeholder="Submit" />
