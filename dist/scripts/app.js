@@ -11,6 +11,7 @@ const contactForm = document.querySelector(".contact");
 const expandedMenu = document.querySelector(".expanded-menu");
 const expandButton = document.querySelector(".expand-button");
 const featuredMenu = document.querySelector('.menu .hello');
+const headerTitles = document.querySelectorAll('.titleAnimate');
 const services = [
   {
     name: "brow shaping",
@@ -153,6 +154,12 @@ const services = [
     featured: true
   }
 ];
+/*BROKEN*/
+animatedTitles = headerTitles.forEach((headerTitle) => {
+    return headerTitle.getBoundingClientRect();
+});
+
+console.log(animatedTitles);
 
 //const keys = Object.entries(services);
 
@@ -161,7 +168,7 @@ function menuData() {
     closeMenu(name);
   } else {
     contactForm.classList.add("expanded-menu-contact");
-    this.classList.add("open");
+    this.classList.add("open"); 
     expandedMenu.classList.remove("hidden");
     services.forEach(function(service) {
       const name = `<div class="expanded-menu-info">
