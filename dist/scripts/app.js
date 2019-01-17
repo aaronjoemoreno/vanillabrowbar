@@ -12,6 +12,7 @@ const expandedMenu = document.querySelector(".expanded-menu");
 const expandButton = document.querySelector(".expand-button");
 const featuredMenu = document.querySelector('.menu .hello');
 const headerTitles = document.querySelectorAll('.titleAnimate');
+const seeMore = document.querySelector(".menu span")
 const services = [
   {
     name: "brow shaping",
@@ -154,20 +155,20 @@ const services = [
     featured: true
   }
 ];
-/*BROKEN*/
+
 animatedTitles = headerTitles.forEach((headerTitle) => {
     return headerTitle.getBoundingClientRect();
 });
 
-console.log(animatedTitles);
-
-//const keys = Object.entries(services);
-
 function menuData() {
   if (this.classList.contains("open")) {
+
     closeMenu(name);
   } else {
     contactForm.classList.add("expanded-menu-contact");
+    seeMore.innerHTML = 'see less';
+    expandedMenu.innerHTML = '';
+
     this.classList.add("open"); 
     expandedMenu.classList.remove("hidden");
     services.forEach(function(service) {
@@ -203,7 +204,7 @@ function featuredMenuData(){
             <div class="service-details">
               ${featuredService.details}
             </div>
-      </div>
+      </div
   
           <div class="menu-right"><h3 class="cost">${featuredService.price}</h3></div>
           <br />
@@ -211,13 +212,12 @@ function featuredMenuData(){
   })
 
 }
-
 function closeMenu(name) {
+  seeMore.innerHTML = 'see more';
   expandButton.classList.remove("open");
   contactForm.classList.remove("expanded-menu-contact");
   expandedMenu.classList.add("hidden");
-
-  expandedMenu.innerHTML += name;
+  expandedMenu.innerHTML -= name;
 }
 
 function fixNav() {

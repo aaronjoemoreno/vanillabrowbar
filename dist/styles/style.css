@@ -4,7 +4,6 @@
   --main-letter-spacing: 20px;
   --menu-letter-spacing: 5px;
   --main-font: 'Source Sans Pro', sans-serif;
-
 }
 body,
 * {
@@ -100,7 +99,7 @@ Header
 .main-title {
   display: inline-block;
   margin: 0 auto;
-  margin-right: 30px;
+  margin-right: 10px;
   text-align: center;
 }
 .main-title h1 {
@@ -112,6 +111,7 @@ Header
   line-height: 0px;
   margin-top: 10px;
   font-size: 1.2em;
+  margin-right: 15px;
   font-family: var(--main-font);
   letter-spacing: 8px;
   color: var(--tile-color);
@@ -233,6 +233,10 @@ MENU - EXPANDED
 }
 .expand-button:hover{
   cursor: pointer;
+}
+span{
+  font-family: var(--main-font);
+  letter-spacing: var(--menu-letter-spacing);
 }
 /*TRANSITION*/
 .open{
