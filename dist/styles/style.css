@@ -170,7 +170,7 @@ Menu
   display: inline-block;
   width: 40%;
   height: auto;
-  vertical-align: bottom;
+  vertical-align: top;
   text-align: left;
 }
 .menu-right{
@@ -195,6 +195,7 @@ Menu
   font-family: var(--main-font);
   float: right;
   text-align: right;
+  margin-top: 35px;
   width: 200px;
 }
 .service-details{
