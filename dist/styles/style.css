@@ -166,6 +166,11 @@ Menu
 .menu .hello{
   width: 100%;
 }
+h1 .hello{
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
 .menu-left{
   display: inline-block;
   width: 40%;
@@ -295,7 +300,8 @@ Contact
   letter-spacing: var(--main-letter-spacing);
   height: 40px;
   line-height: 38px;
-  width: 100%;
+  max-width: 700px;
+  text-align: center;
   margin: 0 auto;
   margin-bottom: 30px;
 }
