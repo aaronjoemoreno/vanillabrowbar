@@ -131,6 +131,7 @@ About
 .hello{
   font-family: var(--main-font);
   letter-spacing: var(--main-letter-spacing);
+  text-align: center;
 }
 .about section{
   max-width: 400px;
@@ -169,7 +170,7 @@ Menu
   display: inline-block;
   width: 40%;
   height: auto;
-  vertical-align: top;
+  vertical-align: bottom;
   text-align: left;
 }
 .menu-right{
@@ -182,7 +183,8 @@ Menu
   margin-top: 40px;
 }
 .menu h1{
-  text-align: center;
+  margin: 0 auto;
+  text-align: left;
 }
 .menu-item{
   float: left;
@@ -252,7 +254,7 @@ span{
   margin-bottom: 10px;
 }
 .cost li{
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   list-style: none;
 }
 .expanded-menu-info{

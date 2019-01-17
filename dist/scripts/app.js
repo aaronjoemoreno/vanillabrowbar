@@ -177,7 +177,6 @@ function menuData() {
 	<div class="price-title-expand">${service.price}</div>
 	</div>`;
 
-      //CONSIDER USING FILTER
       expandedMenu.innerHTML += name;
     });
   }
