@@ -242,11 +242,11 @@ let isInViewport = function(elem) {
 };
 
 //Contact Form Will Come Soon
-function formSubmit(e) {
+// function formSubmit(e) {
   
-}
+// }
 
 window.addEventListener("scroll", fixNav);
-document.querySelector(".submit").addEventListener("click", formSubmit);
+//document.querySelector(".submit").addEventListener("click", formSubmit);
 window.addEventListener("load", featuredMenuData);
 expandButton.addEventListener("click", menuData);
