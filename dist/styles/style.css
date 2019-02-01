@@ -339,6 +339,17 @@ Contact
   color: #404040;
   cursor: pointer;
 }
+
+/*****************
+Photo Section
+*****************/
+.photos{
+  margin-bottom: 50px;
+}
+.photo-wrapper{
+  width: 70%;
+  margin: 0 auto;
+}
 /*****************
 FOOTER
 *****************/
