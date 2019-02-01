@@ -3,7 +3,7 @@
   --dark-color: #404040;
   --main-letter-spacing: 20px;
   --menu-letter-spacing: 5px;
-  --main-font: 'Source Sans Pro', sans-serif;
+  --main-font: "Source Sans Pro", sans-serif;
 }
 body,
 * {
@@ -23,16 +23,16 @@ body,
   box-sizing: inherit;
 }
 
-.main-container h2{
+.main-container h2 {
   position: inherit;
 }
-.main-logo{
+.main-logo {
   float: left;
   width: 50px;
   margin-left: 10px;
   margin-top: 10px;
 }
-.main-logo img{
+.main-logo img {
   width: 100%;
 }
 /*************
@@ -47,7 +47,7 @@ nav {
   z-index: 1;
   text-align: center;
 }
-.main-nav ul{
+.main-nav ul {
   margin: 0 auto;
 }
 nav ul a {
@@ -58,7 +58,7 @@ nav ul a {
   line-height: 10vh;
   font-family: var(--main-font);
 }
-.main-nav p{
+.main-nav p {
   display: inline-block;
   color: #fff;
   margin-left: 10px;
@@ -132,12 +132,12 @@ About
   margin-bottom: 300px;
   float: none;
 }
-.hello{
+.hello {
   font-family: var(--main-font);
   letter-spacing: var(--main-letter-spacing);
   text-align: center;
 }
-.about section{
+.about section {
   max-width: 400px;
   width: 100%;
   text-align: center;
@@ -152,14 +152,14 @@ About
   max-width: 500px;
   margin: 0 auto;
 }
-.team-members{
+.team-members {
   border-top: 1px solid var(--dark-color);
   padding-top: 30px;
 }
 /*************
 Menu
 *************/
-.menu{
+.menu {
   display: block;
   height: 40vh;
   border-top: 1px solid black;
@@ -167,72 +167,73 @@ Menu
   max-width: 1000px;
   margin: 0 auto;
 }
-.menu .hello{
+.menu .hello {
   width: 100%;
 }
-h1 .hello{
+h1 .hello {
   max-width: 700px;
   text-align: center;
   margin: 0 auto;
 }
-.menu-left{
+.menu-left {
   display: inline-block;
   width: 40%;
   height: auto;
   vertical-align: top;
   text-align: left;
 }
-.menu-right{
+.menu-right {
   display: inline-block;
   width: 40%;
   height: auto;
   vertical-align: top;
 }
-.menu-right, .menu-left{
+.menu-right,
+.menu-left {
   margin-top: 40px;
 }
-.menu h1{
+.menu h1 {
   margin: 0 auto;
   text-align: left;
 }
-.menu-item{
+.menu-item {
   float: left;
   font-family: var(--main-font);
   letter-spacing: var(--menu-letter-spacing);
 }
-.cost{
+.cost {
   font-family: var(--main-font);
   float: right;
   text-align: right;
   margin-top: 35px;
   width: 200px;
 }
-.service-details{
+.service-details {
   margin-top: 40px;
   text-align: left;
 }
 /*ADDED DIV created element*/
-.added-div{
+.added-div {
   font-size: 1rem;
   color: var(--dark-color);
   padding-bottom: 2px;
-  border-bottom: .2px solid lightgrey;
+  border-bottom: 0.2px solid lightgrey;
 }
-.added-div .service-details{
+.added-div .service-details {
   letter-spacing: 0px;
 }
-.added-div .cost{
+.added-div .cost {
   letter-spacing: 0px;
 }
 /*after expand button container*/
-.expanded-menu{
+.expanded-menu {
   display: block;
   width: 100%;
 }
 /**************
 MENU - EXPANDED
 ***************/
-.expand-button{
+.expand-button {
   margin: 0 auto;
   width: auto;
   max-width: 50px;
@@ -240,42 +241,42 @@ MENU - EXPANDED
   font-weight: 100;
   font-size: 3em;
 
-  -webkit-transition: transform .5s;
-  transition: transform .5s;
+  -webkit-transition: transform 0.5s;
+  transition: transform 0.5s;
 }
-.expand-button:hover{
+.expand-button:hover {
   cursor: pointer;
 }
-span{
+span {
   font-family: var(--main-font);
   letter-spacing: var(--menu-letter-spacing);
 }
 /*TRANSITION*/
-.open{
+.open {
   transform: rotate(225deg);
-  -webkit-transform-origin: 50% 50% ;
+  -webkit-transform-origin: 50% 50%;
   -moz-transform-origin: 50% 50%;
   -o-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 }
 
-.menu-item li{
+.menu-item li {
   list-style: none;
   margin-bottom: 10px;
 }
-.cost li{
+.cost li {
   margin-bottom: 0px;
   list-style: none;
 }
-.expanded-menu-info{
+.expanded-menu-info {
   width: 80%;
   margin: 0 auto;
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: .5px solid #404040;
+  border-bottom: 0.5px solid #404040;
 }
-.menu-title-expand{
+.menu-title-expand {
   display: inline-block;
   float: left;
   font-size: 1.2em;
@@ -283,7 +284,7 @@ span{
   letter-spacing: var(--menu-letter-spacing);
   line-height: 20px;
 }
-.price-title-expand{
+.price-title-expand {
   text-align: right;
   font-size: 1.2em;
   font-family: var(--main-font);
@@ -291,15 +292,15 @@ span{
 /*************
 Contact
 *************/
-.contact{
+.contact {
   display: block;
-  width: 100%; 
+  width: 100%;
   height: 70vh;
   text-align: center;
   padding-top: 100px;
-  margin-top: 1000px
+  margin-top: 1000px;
 }
-.contact h1{
+.contact h1 {
   font-family: var(--main-font);
   letter-spacing: var(--main-letter-spacing);
   height: 40px;
@@ -309,33 +310,33 @@ Contact
   margin: 0 auto;
   margin-bottom: 30px;
 }
-.form-container{
+.form-container {
   margin: 0 auto;
   width: 80%;
 }
 
-.form-container input{
+.form-container input {
   margin-top: 20px;
   width: 70%;
   height: 40px;
-  border: .5px solid #404040;
+  border: 0.5px solid #404040;
   font-family: var(--main-font);
   text-align: center;
 }
-#textarea{
+#textarea {
   width: 70%;
   margin-top: 20px;
-  border: .5px solid #404040;
+  border: 0.5px solid #404040;
   text-align: center;
   font-family: var(--main-font);
 }
-.submit{
+.submit {
   border: none;
   background: #404040;
   color: #fff;
 }
-.submit:hover{
-  background:#fff;
+.submit:hover {
+  background: #fff;
   color: #404040;
   cursor: pointer;
 }
@@ -343,39 +344,40 @@ Contact
 /*****************
 Photo Section
 *****************/
-.photos{
+.photos {
   margin-bottom: 50px;
 }
-.photo-wrapper{
+.photo-wrapper {
   width: 70%;
   margin: 0 auto;
 }
 /*****************
 FOOTER
 *****************/
-.main-footer{
+.main-footer {
   background: #404040;
   width: 100%;
   min-height: 50px;
-  display:flex;
+  display: flex;
 }
 /**************
 ADDED CLASSES
 **************/
-.tester{
-  border: 1px solid red; 
+.tester {
+  border: 1px solid red;
 }
-.expanded-menu-contact{
+.expanded-menu-contact {
   margin-top: 2000px;
 }
-.hidden{
+.hidden {
   display: none;
 }
 
 /***********
 Animations
 ***********/
-.main-title h3, .about h1{
+.main-title h3,
+.about h1 {
   animation-duration: 3s;
   animation-delay: 0s;
   animation-iteration-count: 1;
