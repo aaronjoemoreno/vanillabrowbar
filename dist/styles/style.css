@@ -121,7 +121,7 @@ Header
 About
 *************/
 .about {
-  height: 70vh;
+  height: auto;
   width: 100%;
   background: var(--about-section);
   text-align: center;
