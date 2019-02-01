@@ -10,6 +10,7 @@ body,
   margin: 0;
   padding: 0;
   font-family: var(--font-one);
+  font-weight: 300;
 }
 .main-container {
   padding: 0;
@@ -121,11 +122,12 @@ Header
 About
 *************/
 .about {
-  height: auto;
+  height: 70vh;
   width: 100%;
   background: var(--about-section);
   text-align: center;
   padding-top: 20vh;
+  margin-bottom: 300px;
   float: none;
 }
 .hello{
