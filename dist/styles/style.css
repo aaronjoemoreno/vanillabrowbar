@@ -125,6 +125,8 @@ About
   height: 70vh;
   width: 100%;
   background: var(--about-section);
+  letter-spacing: 1px;
+  font-family: var(--main-font);
   text-align: center;
   padding-top: 20vh;
   margin-bottom: 300px;
