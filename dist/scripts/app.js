@@ -33,12 +33,6 @@ const services = [
     featured: false
   },
   {
-    name: "brow shaping",
-    details: " ",
-    price: 25,
-    featured: false
-  },
-  {
     name: "half leg",
     details: " ",
     price: 40,
