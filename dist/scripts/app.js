@@ -27,7 +27,7 @@ const services = [
     featured: false
   },
   {
-    name: "ace (brow, lip, cheek, chin)",
+    name: "face (brow, lip, cheek, chin)",
     details: " ",
     price: 40,
     featured: false
