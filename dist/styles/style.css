@@ -382,3 +382,10 @@ Animations
   animation-delay: 0s;
   animation-iteration-count: 1;
 }
+
+/*************
+Netlify Captcha
+************/
+.rc-anchor-container{
+  margin: 0 auto;
+}
