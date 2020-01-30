@@ -386,6 +386,10 @@ Animations
 /*************
 Netlify Captcha
 ************/
-.rc-anchor-container{
-  margin: 0 auto;
+.captcha{
+  text-align: center;
+}
+
+.g-recaptcha{
+  text-align: center;
 }
