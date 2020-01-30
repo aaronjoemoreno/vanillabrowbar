@@ -400,5 +400,5 @@ Netlify Captcha
 
 .g-recaptcha > div{
   margin: 0 auto !important;
-  margin-top: 20px;
+  margin-top: 20px !important;
 }
