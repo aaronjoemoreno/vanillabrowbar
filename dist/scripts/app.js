@@ -156,14 +156,13 @@ animatedTitles = headerTitles.forEach((headerTitle) => {
 
 function menuData() {
   if (this.classList.contains("open")) {
-
     closeMenu(name);
   } else {
     contactForm.classList.add("expanded-menu-contact");
     seeMore.innerHTML = 'see less';
     expandedMenu.innerHTML = '';
 
-    this.classList.add("open"); 
+    this.classList.add("open");
     expandedMenu.classList.remove("hidden");
     services.forEach(function(service) {
       const name = `<div class="expanded-menu-info">
@@ -186,7 +185,7 @@ const featuredServices = serviceNames.map((serviceName) =>{
 
 /*Loads Data on Page Load*/
 function featuredMenuData(){
-  
+
   featuredServices.forEach((featuredService)=>{
     let featuredItem = document.createElement("div");
     featuredItem.classList.add('added-div');
@@ -198,7 +197,7 @@ function featuredMenuData(){
               ${featuredService.details}
             </div>
       </div
-  
+
           <div class="menu-right"><h3 class="cost">${featuredService.price}</h3></div>
           <br />
     `
@@ -237,7 +236,7 @@ let isInViewport = function(elem) {
 
 //Contact Form Will Come Soon
 // function formSubmit(e) {
-  
+
 // }
 
 window.addEventListener("scroll", fixNav);

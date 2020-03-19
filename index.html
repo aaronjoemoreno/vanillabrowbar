@@ -4,7 +4,6 @@
 <!--[if IE 8]> <html class="no-js lt-ie9"></html><![endif]-->
 <!-- [if gt IE 8]><! -->
 <html class="no-js">
-  <!-- <![endif] -->
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,7 +19,6 @@
     />
     <title>Vanilla | Brown Bar + Skincare</title>
 
-    <!--FIX TITLE-->
     <meta
       name="description"
       content="We are Vanilla. We are a brow bar and skincare specialists based in Albuquerque's Old Town"
@@ -58,7 +56,13 @@
           <h1>vanilla</h1>
 
           <h3 class="fadeIn">BROW BAR + SKINCARE</h3>
-        </div>
+          <a href="#shop">
+          <button class="ecommerce-button"
+          >
+          gift cards
+          </button>
+          </a>
+          </div>
         <div class="social-icons">
           <a href="https://www.facebook.com/vanillabrowbar"
             ><img src="dist/images/social/facebook.png" alt="github"
@@ -80,6 +84,8 @@
           <a href="#menu">menu</a>
           <p>|</p>
           <a href="#photos">photos</a>
+          <p>|</p>
+          <a href="#shop">shop</a>
         </ul>
       </nav>
       <div class="about" id="about">
@@ -160,9 +166,58 @@
           <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/8adbbe9968d35e569742cf9c7c4d125a.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
         </div>
       </div>
+      <div class="about" id="shop">
+        <h1 class="titleAnimate hello">SHOP</h1>
+        <div  data-site-id="666e0cc5-4b6e-4659-9652-a025b134517d" data-platform="Other" class="gift-up-target"></div>
+      <script type="text/javascript">
+      (function (g, i, f, t, u, p, s) {
+          g[u] = g[u] || function() { (g[u].q = g[u].q || []).push(arguments) };
+          p = i.createElement(f);
+          p.async = 1;
+          p.src = t;
+          s = i.getElementsByTagName(f)[0];
+          s.parentNode.insertBefore(p, s);
+      })(window, document, "script", "https://cdn.giftup.app/dist/gift-up.js", "giftup");
+      </script>
+      </div>
 
-      <footer class="main-footer"></footer>
+      <!-- <footer class="main-footer"></footer> -->
     </div>
     <script src="dist/scripts/app.js" async defer></script>
+    <!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
+
+<div id="error-message"></div>
+
+<script>
+(function() {
+  var stripe = Stripe('pk_test_2kP2W5G3BuXTkqEJzzoVpVbF00tOTn9eKc');
+
+  var checkoutButton = document.getElementById('checkout-button-sku_Gw1b4PTVFMFD7P');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{sku: 'sku_Gw1b4PTVFMFD7P', quantity: 1}],
+
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: 'https://vanillabrowbar.com/thank-you',
+      cancelUrl: 'https://vanillabrowbar.com/',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+</script>
   </body>
 </html>
