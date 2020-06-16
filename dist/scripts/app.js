@@ -29,7 +29,7 @@ const services = [
   {
     name: "face (brow, lip, cheek, chin)",
     details: " ",
-    price: 40,
+    price: 45,
     featured: false
   },
   {
