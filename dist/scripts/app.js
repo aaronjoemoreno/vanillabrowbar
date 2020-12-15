@@ -57,6 +57,18 @@ const services = [
     featured: false
   },
   {
+    name: "brow lamination",
+    details: " ",
+    price: 60,
+    featured: false
+  },
+  {
+    name: "lash lift",
+    details: " ",
+    price: 70,
+    featured: false
+  },
+  {
     name: "underarm",
     details: " ",
     price: 20,
