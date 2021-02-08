@@ -39,7 +39,7 @@
 /*left side of Menu Portion*/
     .menu-left{
     }
-    
+
   /*Name of Service*/
     .menu-item{
       margin-bottom: 10px;
@@ -73,7 +73,7 @@
     }
     .social-icons a img{
       max-width: 30px;
-    
+
     }
     .main-nav ul a{
       color: var(--dark-color);
@@ -81,12 +81,17 @@
     .contact{
       margin-top: 1750px;
     }
+
+    .main-text{
+      width: 80%;
+    }
+
     .expanded-menu-contact{
       margin-top: 2500px;
     }
   }
-  
-  
+
+
   @media screen and (max-width: 400px) {
     .main-icon {
       width: 250px;

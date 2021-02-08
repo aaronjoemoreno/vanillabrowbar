@@ -204,14 +204,13 @@ function featuredMenuData(){
     featuredMenu.appendChild(featuredItem);
     featuredItem.innerHTML = `
     <div class="menu-left">
-            <h2 class="menu-item">${featuredService.name}</h2>
-            <div class="service-details">
-              ${featuredService.details}
-            </div>
-      </div
-
-          <div class="menu-right"><h3 class="cost">${featuredService.price}</h3></div>
-          <br />
+      <h2 class="menu-item">${featuredService.name}</h2>
+        <div class="service-details">
+          ${featuredService.details}
+        </div>
+    </div
+    <div class="menu-right"><h3 class="cost">${featuredService.price}</h3></div>
+    <br />
     `
   })
 
@@ -245,11 +244,6 @@ let isInViewport = function(elem) {
       (window.innerWidth || document.documentElement.clientWidth)
   );
 };
-
-//Contact Form Will Come Soon
-// function formSubmit(e) {
-
-// }
 
 window.addEventListener("scroll", fixNav);
 //document.querySelector(".submit").addEventListener("click", formSubmit);
