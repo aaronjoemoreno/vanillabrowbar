@@ -5,11 +5,11 @@ const services = {
     details: " ",
     price: 25,
     featured: false
-  }, 
+  },
   wax2:{
     name: "brow + lip",
     details: " ",
-    price: 30,
+    price: 35,
     featured: false
   },
   wax3:{
@@ -27,7 +27,7 @@ const services = {
   wax5:{
     name: "half leg",
     details: " ",
-    price: 40,
+    price: 45,
     featured: false
   },
   wax6:{
@@ -39,13 +39,13 @@ const services = {
   wax7:{
     name: "bikini",
     details: " ",
-    price: 35,
+    price: 40,
     featured: false
   },
   wax8:{
     name: "brazilian",
     details: " ",
-    price: 50,
+    price: 55,
     featured: false
   },
   wax9:{
@@ -57,19 +57,19 @@ const services = {
   wax10:{
     name: "arm",
     details: " ",
-    price: 40,
+    price: 45,
     featured: false
   },
   wax11:{
     name: "back",
     details: " ",
-    price: 50,
+    price: 55,
     featured: false
   },
   wax12:{
     name: "chest",
     details: " ",
-    price: 50,
+    price: 55,
     featured: false
   },
 
@@ -97,43 +97,43 @@ const services = {
   treatment1:{
     name: "mini facial",
     details: "cleanse, exfoliate, nourish, relax, customizable",
-    price: 60,
+    price: 70,
     featured: false
   },
   treatment2:{
     name: "microdermabrasion",
     details: "renew skin tone + texture, brighten, treat",
-    price: 90,
+    price: 95,
     featured: false
   },
   treatment3:{
     name: "progressive peel",
     details: "refining, removes outer layers of skin, skin may have mild sloughing, treatment can be repeated three to four weeks apart",
-    price: 65,
+    price: 75,
     featured: false
   },
   treatment4:{
     name: "mid depth peel",
     details: "rejuvenating, targets deeper layers of the skin, treatment can be repeated monthly",
-    price: 85,
+    price: 95,
     featured: false
   },
   treatment5:{
     name: "deep peel",
     details: "restoring, reaches deepest epidermal layers of the skin, peels in large segments occurring three to four days after treatment, recovery lasts seven to ten days, can be repeated four times per year",
-    price: 100,
+    price: 120,
     featured: false
   },
   treatment6:{
     name: "micro peel",
     details: "combo of microdermabrasion and peel, customizable, downtime depending on peel used",
-    price: 125,
+    price: 135,
     featured: false
   },
   treatment7:{
     name: "dermaplaning",
     details: "light exfoliation, removal of peach fuzz, results are immediate, no downtime",
-    price: 50,
+    price: 60,
     featured: false
   },
 
