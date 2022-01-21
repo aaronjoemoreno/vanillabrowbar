@@ -23,19 +23,19 @@ const services = [
   {
     name: "brow + lip",
     details: " ",
-    price: 30,
+    price: 35,
     featured: false
   },
   {
     name: "face (brow, lip, cheek, chin)",
     details: " ",
-    price: 45,
+    price: 55,
     featured: false
   },
   {
     name: "half leg",
     details: " ",
-    price: 40,
+    price: 45,
     featured: false
   },
   {
@@ -47,13 +47,13 @@ const services = [
   {
     name: "bikini",
     details: " ",
-    price: 35,
+    price: 40,
     featured: false
   },
   {
     name: "brazilian",
     details: " ",
-    price: 50,
+    price: 55,
     featured: false
   },
   {
@@ -65,31 +65,31 @@ const services = [
   {
     name: "lash lift",
     details: " ",
-    price: 70,
+    price: 75,
     featured: false
   },
   {
     name: "underarm",
     details: " ",
-    price: 20,
+    price: 22,
     featured: false
   },
   {
     name: "arm",
     details: " ",
-    price: 40,
+    price: 45,
     featured: false
   },
   {
     name: "back",
     details: " ",
-    price: 50,
+    price: 55,
     featured: false
   },
   {
     name: "chest",
     details: " ",
-    price: 50,
+    price: 55,
     featured: false
   },
 
@@ -97,13 +97,13 @@ const services = [
   {
     name: "lash tint",
     details: "boost color, semi-permanent, immediate results",
-    price: 20,
+    price: 25,
     featured: true
   },
   {
     name: "brow tint",
     details: "boost thickness and color, immediate results",
-    price: 20,
+    price: 40,
     featured: true
   },
   {
@@ -116,27 +116,27 @@ const services = [
   {
     name: "mini facial",
     details: "cleanse, exfoliate, nourish, relax, customizable",
-    price: 60,
+    price: 70,
     featured: true
   },
   {
     name: "microdermabrasion",
     details: "renew skin tone + texture, brighten, treat",
-    price: 90,
+    price: 95,
     featured: true
   },
   {
     name: "progressive peel",
     details:
       "refining, removes outer layers of skin, skin may have mild sloughing, treatment can be repeated three to four weeks apart",
-    price: 65,
+    price: 75,
     featured: true
   },
   {
     name: "mid depth peel",
     details:
       "rejuvenating, targets deeper layers of the skin, treatment can be repeated monthly",
-    price: 85,
+    price: 95,
     featured: true
   },
   {
@@ -150,14 +150,14 @@ const services = [
     name: "micro peel",
     details:
       "combo of microdermabrasion and peel, customizable, downtime depending on peel used",
-    price: 125,
+    price: 135,
     featured: true
   },
   {
     name: "dermaplaning",
     details:
       "light exfoliation, removal of peach fuzz, results are immediate, no downtime",
-    price: 50,
+    price: 60,
     featured: true
   }
 ];
