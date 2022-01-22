@@ -17,7 +17,7 @@ const services = [
   {
     name: "brow shaping",
     details: " ",
-    price: 25,
+    price: 28,
     featured: false
   },
   {
@@ -101,7 +101,7 @@ const services = [
     featured: true
   },
   {
-    name: "brow tint",
+    name: "brow + tint",
     details: "boost thickness and color, immediate results",
     price: 40,
     featured: true
