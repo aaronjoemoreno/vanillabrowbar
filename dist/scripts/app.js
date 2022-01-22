@@ -109,7 +109,7 @@ const services = [
   {
     name: "brow tint add-on",
     details: "add to brow shape to enhance thickness",
-    price: 10,
+    price: 12,
     featured: true
   },
   /*Treatments */
